@@ -1,0 +1,11 @@
+#home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 70px 0;
+}
+
+#home-steps {
+  margin-top: 100px;
+}
