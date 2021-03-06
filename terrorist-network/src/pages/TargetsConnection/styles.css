@@ -1,0 +1,42 @@
+#targets-connection-container {
+  margin: 20px;
+}
+
+#targets-connection-title {
+  text-align: center;
+}
+
+#targets-connection-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 20px
+}
+
+#target-connection-wanted-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #FFF;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 25px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#target-connection-wanted-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#target-connection-wanted-image {
+  width: 100px;
+  height: 100px;
+}
+
+#icon-phone {
+  margin: 0 20px;
+}
