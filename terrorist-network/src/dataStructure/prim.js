@@ -116,8 +116,9 @@ export class Graph {
 
     this.cost = total;
     this.path = edges;
-    console.log(edges);
-    console.log(total);
+    // console.log(edges);
+    // console.log(total);
+    return { edges: edges, total: total }
   }
 
   getPath() {
