@@ -1,11 +1,7 @@
-import { Graph } from '../dataStructure/prim.js';
-
-export const populateGraph = () => {
+export function populateGraph(graph) {
   const generateTime = () => {
     return Math.floor(Math.random() * 30);
   }
-
-  const graph = new Graph();
 
   // Adição dos nós (possíveis terroristas)
   graph.addNode("Kelton Boaventura Natal");
@@ -80,30 +76,5 @@ export const populateGraph = () => {
   graph.addEdge("Anaísa Gomide Rosário", "Mafalda Borges Couceiro", generateTime());
   graph.addEdge("Pietra Alcântara Espinosa", "Otília Covilhã Bilhalva", generateTime());
 
-  const getNodes = graph.getNodes();
-  const getEdges = graph.getEdges();
-  var allNodes = [];
-  var allEdges = [];
-
-  for (var node in getNodes) {
-    allNodes.push({
-      id: getNodes[node].id.split(' ')[0],
-      label: getNodes[node].id.split(' ')[0]
-    });
-  }
-
-  for (var edge in getEdges) {
-    allEdges.push({
-      from: getEdges[edge].to.source.split(' ')[0],
-      to: getEdges[edge].to.target.split(' ')[0],
-      label: 1
-    })
-  }
-
-  const graphFormated = {
-    nodes: allNodes,
-    edges: allEdges,
-  };
-
-  return graphFormated;
+  return graph;
 };
