@@ -1,9 +1,14 @@
 #targets-connection-container {
+  height: 100%;
   margin: 20px;
 }
 
 #targets-connection-title {
   text-align: center;
+}
+
+#targets-connection-graph {
+  height: 100%;
 }
 
 #targets-connection-content {
