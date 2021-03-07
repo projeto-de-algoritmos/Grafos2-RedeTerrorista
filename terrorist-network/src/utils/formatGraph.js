@@ -9,16 +9,20 @@ export const formatGraphGeneral = (graph) => {
 
   for (var node in getNodes) {
     allNodes.push({
-      id: getNodes[node].id.split(' ')[0],
+      id: getNodes[node].id,
       label: getNodes[node].id,
     });
   }
 
+  var i = 0;
   for (var edge in getEdges) {
     allEdges.push({
-      source: getEdges[edge].to.source.split(' ')[0],
-      target: getEdges[edge].to.target.split(' ')[0],
+      from: getEdges[edge].to.source,
+      to: getEdges[edge].to.target,
+      label: `${getEdges[edge].to.weight}`,
+      id: i,
     });
+    i++;
   }
 
   const graphFormated = {
@@ -29,39 +33,35 @@ export const formatGraphGeneral = (graph) => {
   return graphFormated;
 };
 
-// export const formatGraphPrim = (graph, target) => {
-//   var graphPrim = graph.prim(target);
+export const formatGraphPrim = (graph, target) => {
+  var graphPrim = graph.prim(target);
 
-//   var allNodes = [];
-//   var allEdges = [];
+  var allNodes = [];
+  var allEdges = [];
 
-//   const getNodes = graph.getNodes();
-//   for (var node in getNodes) {
-//     allNodes.push({
-//       id: getNodes[node].id.split(' ')[0],
-//       label: getNodes[node].id.split(' ')[0],
-//     });
-//   }
+  const getNodes = graph.getNodes();
+  for (var node in getNodes) {
+    allNodes.push({
+      id: getNodes[node].id,
+      label: getNodes[node].id,
+    });
+  }
 
-//   for (var edge in graphPrim.edges) {
-//     allEdges.push({
-//       from: graphPrim.edges[edge].source.split(' ')[0],
-//       to: graphPrim.edges[edge].target.split(' ')[0],
-//     });
-//   }
+  var i = 0;
+  for (var edge in graphPrim.edges) {
+    allEdges.push({
+      from: graphPrim.edges[edge].source,
+      to: graphPrim.edges[edge].target,
+      label: `${graphPrim.edges[edge].cost}`,
+      id: i,
+    });
+    i++;
+  }
 
-//   const graphFormated = {
-//     nodes: allNodes,
-//     edges: allEdges,
-//   };
+  const graphFormated = {
+    nodes: allNodes,
+    edges: allEdges,
+  };
 
-//   return graphFormated;
-// };
-
-// const graph = new Graph();
-// populateGraph(graph);
-// graph.prim('Anaísa Gomide Rosário')
-// console.log(graph)
-// console.log(formatGraphGeneral(graphData));
-
-// console.log(people[0].coordinates)
+  return graphFormated;
+};
