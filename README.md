@@ -28,11 +28,12 @@ O nosso projeto utiliza o algoritmo de Prim para encontrar a arvore geradora min
 
 ### Comandos 
 Para rodar o projeto são necessários apenas dois comandos **(que devem ser rodados na pasta terrorist-network)**:
+1. Para instalar todas as dependencias do projeto.
   > yarn install
-  > Para instalar todas as dependencias do projeto.
+2. Para executar o projeto. 
+  > yarn start 
 
-  > yarn start
-  > Para executar o projeto. 
+
 
 
 
