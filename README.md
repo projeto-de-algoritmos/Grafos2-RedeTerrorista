@@ -10,10 +10,10 @@
 | 17/0069800 | Ithalo Luiz de Azevedo Mendes |
 
 ## Apresentação
+O vídeo da apresentação se encontra na pasta /media.
 
 ## Sobre 
-Descreva os objetivos do seu projeto e como ele funciona. 
-
+O nosso projeto utiliza o algoritmo de Prim para encontrar a arvore geradora minima de uma rede de terroristas. O grafo foi criado pensando em uma rede de ligações telefônicas em que os nós são as pessoas e as arestas são o tempo da ligação. Os nomes das pessoas foram pegos em um site [gerador de nomes](https://gerador-nomes.herokuapp.com) e as arestas do nosso grafo são geradas aleatoriamente por uma função sempre que a aplicação é iniciada.
 ## Screenshots
 ![](media/screenshots/home.png)
 ![](media/screenshots/grafo.png)
@@ -21,14 +21,20 @@ Descreva os objetivos do seu projeto e como ele funciona.
 
 ## Instalação 
 **Linguagem**: Javascript<br>
-**Framework**: (caso exista)<br>
-Descreva os pré-requisitos para rodar o seu projeto e os comandos necessários.
+**Framework**: ReactJS<br>
 
-## Uso 
-Explique como usar seu projeto caso haja algum passo a passo após o comando de execução.
+### Pré requisitos
+- Yarn
 
-## Outros 
-Quaisquer outras informações sobre seu projeto podem ser descritas abaixo.
+### Comandos 
+Para rodar o projeto são necessários apenas dois comandos **(que devem ser rodados na pasta terrorist-network)**:
+  > yarn install
+  > Para instalar todas as dependencias do projeto.
+
+  > yarn start
+  > Para executar o projeto. 
+
+
 
 
 
