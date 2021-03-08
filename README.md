@@ -4,10 +4,10 @@
 **Conteúdo da Disciplina**: Grafos<br>
 
 ## Alunos
-|Matrícula | Aluno |
-| -- | -- |
-| 18/0063723  |  Fellipe dos Santos Araujo |
-| 17/0069800  | Ithalo Luiz de Azevedo Mendes | 
+| Matrícula  | Aluno                         |
+| ---------- | ----------------------------- |
+| 18/0063723 | Fellipe dos Santos Araujo     |
+| 17/0069800 | Ithalo Luiz de Azevedo Mendes |
 
 ## Apresentação
 
@@ -15,10 +15,12 @@
 Descreva os objetivos do seu projeto e como ele funciona. 
 
 ## Screenshots
-Adicione 3 ou mais screenshots do projeto em funcionamento.
+![](media/screenshots/home.png)
+![](media/screenshots/grafo.png)
+![](media/screenshots/arvore.png)
 
 ## Instalação 
-**Linguagem**: xxxxxx<br>
+**Linguagem**: Javascript<br>
 **Framework**: (caso exista)<br>
 Descreva os pré-requisitos para rodar o seu projeto e os comandos necessários.
 
